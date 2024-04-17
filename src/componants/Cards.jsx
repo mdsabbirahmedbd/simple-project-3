@@ -1,7 +1,7 @@
 import { IoIosPricetags } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import { PropTypes } from 'prop-types';
-import { Link } from "react-router-dom";
+import {  NavLink } from "react-router-dom";
 
 const Cards = ({data}) => {
   
@@ -28,7 +28,7 @@ const Cards = ({data}) => {
         }
       </div>
       <div className="card-actions justify-end">
-        <Link to={}><button className="btn btn-primary">View</button></Link>
+        <NavLink to={`/details/${id}`}><button className="btn btn-primary">View</button></NavLink>
       </div>
     </div>
   </div>
