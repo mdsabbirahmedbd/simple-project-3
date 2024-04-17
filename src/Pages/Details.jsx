@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async"
 import { FaLocationDot } from "react-icons/fa6"
 import { IoIosPricetags } from "react-icons/io"
 import { Link, useLoaderData, useParams } from "react-router-dom"
@@ -13,6 +14,9 @@ const Details = () => {
    const {image_url,estate_title,segment_name,description,price,status,area,location,facilities} = currrentDetails
   return (
     <div className="my-12">
+      <Helmet>
+        <title>TripAdvisor | details</title>
+      </Helmet>
         <div className="card border p-3">
     <figure><img src={image_url} className='h-96 w-full' alt="" /></figure>
     <div className="card-body">

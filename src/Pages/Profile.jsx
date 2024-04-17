@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import { authContext } from "../Context/Context"
+import { Helmet } from "react-helmet-async"
 
 
 const Profile = () => {
@@ -7,10 +8,14 @@ const Profile = () => {
  if(loading){
   return <div className="absolute top-1/2 left-1/2 text-4xl"><span className="loading  loading-spinner loading-lg text-primary"></span></div>
 }
- console.log(user)
    const {displayName,photoURL , email } = user
   return (
     <div className="flex flex-col justify-center max-w-96 mx-auto my-10 p-6 shadow-md rounded-xl sm:px-12 dark:bg-gray-50 dark:text-gray-800">
+      <Helmet>
+        <title>
+        TripAdvisor | profile
+        </title>
+      </Helmet>
 	<img src={photoURL} alt="" className="w-32 h-32 mx-auto rounded-full dark:bg-gray-500 aspect-square" />
 	<div className="space-y-4 text-center divide-y dark:divide-gray-300">
 		<div className="my-2 space-y-1">

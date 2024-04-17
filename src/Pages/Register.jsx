@@ -3,6 +3,7 @@ import { useContext, useState } from "react"
 import { Link } from "react-router-dom"
 import { authContext } from './../Context/Context';
 import { IoEyeSharp } from "react-icons/io5";
+import { Helmet } from 'react-helmet';
 
 
 const Register = () => {
@@ -52,6 +53,9 @@ const Register = () => {
 
   return (
     <div>
+		<Helmet>
+			<title>TripAdvisor | register</title>
+		</Helmet>
     <div className="flex my-16  justify-center">
       <div className="w-full max-w-md p-8 space-y-3 rounded-xl bg-gray-900 text-gray-100">
 	<h1 className="text-2xl font-bold text-center">Register</h1>

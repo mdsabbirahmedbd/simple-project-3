@@ -3,6 +3,7 @@ import { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { authContext } from '../Context/Context';
 import { HiMiniEyeSlash } from "react-icons/hi2";
+import { Helmet } from "react-helmet-async";
 
 
 const Login = () => {
@@ -55,7 +56,9 @@ const Login = () => {
  
   return (
     <div>
-      
+       <Helmet>
+		<title>TripAdvisor | login</title>
+	   </Helmet>
       <div className="flex my-16  justify-center">
       <div className="w-full max-w-md p-8 space-y-3 rounded-xl bg-gray-900 text-gray-100">
 	<h1 className="text-2xl font-bold text-center">Login</h1>

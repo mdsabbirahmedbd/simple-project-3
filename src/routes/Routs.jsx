@@ -3,8 +3,6 @@ import Root from "../Root/Root";
 import Home from "../Pages/Home";
 import Login from './../Pages/Login';
 import Register from './../Pages/Register';
-import Contact from '../Pages/Profile'
-import Products from './../Pages/Products';
 import Details from "../Pages/Details";
 import Praivate from "../Praivate/Praivate";
 import Profile from "../Pages/Profile";
@@ -18,10 +16,6 @@ const router = createBrowserRouter([
                path:'/',
                element:<Home></Home>,
                loader:()=> fetch('../../public/estate.json')
-            },
-            {
-                path:'/product',
-                element:<Products></Products>
             },
             {
                 path:'/details/:id',
