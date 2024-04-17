@@ -10,15 +10,11 @@ const Navbar = () => {
   const {user,singOut} = useContext(authContext)
 
 
-
-
-  
- 
-
-
     const links = <>
      <li><NavLink className={({isActive}) => isActive && 'text-primary underline font-bold' } to={'/'}>Home</NavLink></li>
-     <li><NavLink className={({isActive}) => isActive && 'text-primary underline font-bold' } to={'/contact'}>Contact</NavLink></li>
+    {
+      user &&  <li><NavLink className={({isActive}) => isActive && 'text-primary underline font-bold' } to={'/profile'}>Update Profile</NavLink></li>
+    }
      <li><NavLink className={({isActive}) => isActive && 'text-primary underline font-bold' } to={'/register'}>Register</NavLink></li>
      
     </>
@@ -48,16 +44,16 @@ const Navbar = () => {
        <div className="dropdown dropdown-end">
       <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
         <div className="w-10 rounded-full">
-          <img alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+          <img alt="Tailwind CSS Navbar component" src={user.photoURL || 'https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg'}  />
         </div>
       </div>
       <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box lg:w-52">
         <li>
-          <a >
-            Profile
-          </a>
+           <Link to={'/profile'}>Profile</Link>
         </li>
-        <li><a>Settings</a></li>
+        <li> <a >
+            {user.displayName || 'name not found'}
+          </a></li>
         <li onClick={singOut}><a>Logout</a></li>
       </ul>
     </div>

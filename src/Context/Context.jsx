@@ -1,7 +1,7 @@
 import { createContext, useEffect, useState} from "react"
 
 import { PropTypes } from 'prop-types';
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut, GoogleAuthProvider, signInWithPopup, GithubAuthProvider } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut, GoogleAuthProvider, signInWithPopup, GithubAuthProvider, updateProfile } from "firebase/auth";
 import app from './../firbase/firebase_config';
 
 
@@ -52,7 +52,14 @@ const Context = ({children}) => {
      return signOut(auth)
     }
 
-    const userForm = {registerForm,loginForm,user,singOut,singInWithGoogle,singinWithGithub,loading}
+
+    const updateUserProfile = (name,image) => {
+      return updateProfile(auth.currentUser, {
+        displayName: name, photoURL:image
+      })
+    }
+
+    const userForm = {registerForm,loginForm,user,singOut,singInWithGoogle,singinWithGithub,loading,updateUserProfile}
 
 
 

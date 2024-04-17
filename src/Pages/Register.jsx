@@ -6,7 +6,7 @@ import { IoEyeSharp } from "react-icons/io5";
 
 
 const Register = () => {
-        const {registerForm} = useContext(authContext)
+        const {registerForm,updateUserProfile} = useContext(authContext)
        
 		const [error,setError] = useState(null)
 		const [success,setSuccess] = useState(null)
@@ -22,6 +22,8 @@ const Register = () => {
     const handleFormSubmit = (e) => {
 		e.preventDefault()
 		const email = e.target.email.value
+		const name = e.target.name.value
+		const photo = e.target.photo.value
 		const password = e.target.password.value
         setError('')
 		setSuccess('')
@@ -35,14 +37,14 @@ const Register = () => {
 
 
 		registerForm(email,password)
-		.then(result =>{
-			
-			console.log(result.user)
-			setSuccess('Create Account Successfuly')
+		.then(()=>{
+			updateUserProfile(name,photo)
+			.then(()=>{
+				setSuccess('Create Account Successfuly')
+			})
 			
 		})
-		.catch(error =>{
-			console.log(error)
+		.catch(() =>{
 			setError('This account alrady registerd')
 		})
 	}
@@ -57,6 +59,10 @@ const Register = () => {
 		<div className="space-y-1 text-sm">
 			<label  className="block text-gray-400">Name</label>
 			<input required type="text" name="name" id="username" placeholder="User name" className="w-full px-4 py-3 rounded-md border bg-gray-900 text-gray-100 focus:border-violet-400" />
+		</div>
+		<div className="space-y-1 text-sm">
+			<label  className="block text-gray-400">Photo</label>
+			<input  type="text" name="photo" id="username" placeholder="photo url" className="w-full px-4 py-3 rounded-md border bg-gray-900 text-gray-100 focus:border-violet-400" />
 		</div>
 		<div className="space-y-1 text-sm">
 			<label required  className="block text-gray-400">Email</label>

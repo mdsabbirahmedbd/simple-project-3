@@ -7,6 +7,7 @@ import Contact from '../Pages/Profile'
 import Products from './../Pages/Products';
 import Details from "../Pages/Details";
 import Praivate from "../Praivate/Praivate";
+import Profile from "../Pages/Profile";
 
 const router = createBrowserRouter([
     {
@@ -28,8 +29,8 @@ const router = createBrowserRouter([
                 loader:()=> fetch('../../public/estate.json')
             },
             {
-                path:'/contact',
-                element:<Contact></Contact>
+                path:'/profile',
+                element:<Profile></Profile>
             },
             {
                 path:'/login',
