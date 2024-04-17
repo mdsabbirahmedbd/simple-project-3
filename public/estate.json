@@ -1,0 +1,153 @@
+[
+    {
+        "id": 1,
+        "image_url": " https://i.ibb.co/gPpFB2S/pexels-pixabay-258154.jpg",
+        "estate_title": "Grand Palace Hotel",
+        "segment_name": "Hotel",
+        "description": "Experience luxury and elegance at the Grand Palace Hotel, located in the heart of downtown.",
+        "price": "$350 per night",
+        "status": "rent",
+        "area": "6000 sq ft",
+        "location": "New York City, USA",
+        "facilities": ["Spa", "Fitness Center", "Fine Dining Restaurant", "Business Center"]
+      }
+,
+{
+    "id": 2,
+    "image_url": "https://i.ibb.co/ZVWW229/meritt-thomas-Hn-T7-Pv7-EO3-E-unsplash.jpg",
+    "estate_title": "Seaside Villa Retreat",
+    "segment_name": "Vacation Rental",
+    "description": "Escape to paradise in this exquisite seaside villa, offering stunning views and unmatched tranquility.",
+    "price": "$800 per night",
+    "status": "rent",
+    "area": "4000 sq ft",
+    "location": "Santorini, Greece",
+    "facilities": ["Infinity Pool", "Private Beach Access", "Outdoor Lounge", "Gourmet Kitchen"]
+  }
+  ,
+  {
+      "id": 3,
+    "image_url": "https://i.ibb.co/f2jCW3r/ai-generated-8379613-640.png",
+    "estate_title": "Mountain View Lodge",
+    "segment_name": "Lodge",
+    "description": "Immerse yourself in nature's beauty at the Mountain View Lodge, nestled in the breathtaking mountains.",
+    "price": "$250 per night",
+    "status": "rent",
+    "area": "3000 sq ft",
+    "location": "Banff, Canada",
+    "facilities": ["Fireplace", "Hiking Trails Access", "Outdoor BBQ Area", "Cozy Lounge"]
+  }
+,
+{
+    "id": 4,
+    "image_url":"https://i.ibb.co/ZXnmYx4/thomas-le-UMx-ZIS6-CPv-Q-unsplash.jpg",
+    "estate_title": "Sunset Motel",
+    "segment_name": "Motel",
+    "description": "Enjoy comfort and convenience at the Sunset Motel, located near popular attractions and dining.",
+    "price": "$100 per night",
+    "status": "rent",
+    "area": "2000 sq ft",
+    "location": "Los Angeles, USA",
+    "facilities": ["Free Parking", "Outdoor Pool", "24-hour Front Desk", "WiFi"]
+  }
+  
+
+,
+
+{
+    "id": 5,
+    "image_url": "https://i.ibb.co/2NPNkmD/ben-eaton-na4m-Edw-R7u-A-unsplash.jpg",
+    "estate_title": "Charming Guesthouse",
+    "segment_name": "Guesthouse",
+    "description": "Experience a cozy and welcoming atmosphere at the Charming Guesthouse, perfect for a relaxing getaway.",
+    "price": "$150 per night",
+    "status": "rent",
+    "area": "1500 sq ft",
+    "location": "Paris, France",
+    "facilities": ["Garden Patio", "Complimentary Breakfast", "Free Bicycle Rental", "Ensuite Bathrooms"]
+  }
+  
+
+,
+
+{
+    "id": 6,
+    "image_url": "https://i.ibb.co/5hRcTcv/pexels-thorsten-technoman-338504.jpg",
+    "estate_title": "Tropical Paradise Resort",
+    "segment_name": "Resort",
+    "description": "Indulge in luxury and relaxation at the Tropical Paradise Resort, surrounded by lush tropical gardens and pristine beaches.",
+    "price": "$600 per night",
+    "status": "rent",
+    "area": "8000 sq ft",
+    "location": "Phuket, Thailand",
+    "facilities": ["Spa & Wellness Center", "Swimming Pools", "Tennis Courts", "Multiple Restaurants"]
+  }
+  
+,
+
+{
+    "id": 7,
+    "image_url": "https://i.ibb.co/sPtqkW6/aaker-RYj-Rm-OQtl-UA-unsplash.jpg",
+    "estate_title": "Mountain Chalet Retreat",
+    "segment_name": "Vacation Rental",
+    "description": "Escape to the mountains in this charming chalet retreat, offering breathtaking views and cozy accommodations.",
+    "price": "$400 per night",
+    "status": "rent",
+    "area": "2500 sq ft",
+    "location": "Aspen, Colorado, USA",
+    "facilities": ["Hot Tub", "Ski-in/Ski-out Access", "Outdoor Fireplace", "Fully Equipped Kitchen"]
+  }
+
+,
+{
+    "id": 8,
+    "image_url": "https://i.ibb.co/SP5sDWr/ethan-robertson-SYx3-UCHZJlo-unsplash.jpg",
+    "estate_title": "Cityscape Motel",
+    "segment_name": "Motel",
+    "description": "Conveniently located in the heart of the city, the Cityscape Motel offers comfortable accommodations for urban explorers.",
+    "price": "$120 per night",
+    "status": "rent",
+    "area": "1800 sq ft",
+    "location": "Tokyo, Japan",
+    "facilities": ["City View Rooms", "24-hour Room Service", "On-site Parking", "Free WiFi"]
+  }
+  
+
+
+,
+{
+    "id": 9,
+    "image_url": "https://i.ibb.co/G7L1vZp/pexels-boonkong-boonpeng-1134176.jpg",
+    "estate_title": "Royal Heritage Hotel",
+    "segment_name": "Hotel",
+    "description": "Step into a world of luxury and opulence at the Royal Heritage Hotel, where every guest is treated like royalty.",
+    "price": "$500 per night",
+    "status": "rent",
+    "area": "7000 sq ft",
+    "location": "London, UK",
+    "facilities": ["Fine Dining Restaurant", "Concierge Service", "Luxury Spa", "Conference Facilities"]
+  }
+,
+{
+    "id": 10,
+    "image_url": "https://i.ibb.co/vk3cS9q/vu-anh-Ti-VPTYCG-3-E-unsplash.jpg",
+    "estate_title": "Riverside Retreat Guesthouse",
+    "segment_name": "Guesthouse",
+    "description": "Experience serenity by the river at the Riverside Retreat Guesthouse, offering peaceful accommodations and beautiful views.",
+    "price": "$120 per night",
+    "status": "rent",
+    "area": "2000 sq ft",
+    "location": "Kyoto, Japan",
+    "facilities": ["Riverside Terrace", "Japanese Garden", "Traditional Tatami Rooms", "Complimentary Tea Ceremony"]
+  }
+  
+]
+
+
+
+
+
+
+
+
+
