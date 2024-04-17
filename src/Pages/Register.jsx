@@ -1,8 +1,8 @@
-
+import { HiMiniEyeSlash } from "react-icons/hi2";
 import { useContext, useState } from "react"
 import { Link } from "react-router-dom"
 import { authContext } from './../Context/Context';
-
+import { IoEyeSharp } from "react-icons/io5";
 
 
 const Register = () => {
@@ -11,7 +11,11 @@ const Register = () => {
 		const [error,setError] = useState(null)
 		const [success,setSuccess] = useState(null)
       
-		
+		const [showPassword,setShowPassword] = useState(false)
+
+	const handleShowPassword = ()=>{
+	setShowPassword(!showPassword)
+		}	  
     
 
 	
@@ -60,8 +64,10 @@ const Register = () => {
 		</div>
 		<div className="space-y-1 text-sm">
 			<label  className="block text-gray-400">Password</label>
-			<input required type="password" name="password" id="password" placeholder="Password" className="w-full px-4 py-3 rounded-md  bg-gray-900 text-gray-100 border focus:border-violet-400" />
-
+			<div className="relative">
+			<input required type={showPassword ? 'text' : 'password'} name="password" id="password" placeholder="Password" className="w-full px-4 py-3 rounded-md  bg-gray-900 text-gray-100 border focus:border-violet-400" />
+			<span onClick={handleShowPassword}  className="absolute text-lg cursor-pointer  top-4 right-3">{showPassword ? <IoEyeSharp />   : <HiMiniEyeSlash />}</span>
+			</div>
          <div>
 			{
               error && <p className="text-red-600">{error}</p>

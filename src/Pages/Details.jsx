@@ -1,6 +1,7 @@
 import { FaLocationDot } from "react-icons/fa6"
 import { IoIosPricetags } from "react-icons/io"
-import { useLoaderData, useParams } from "react-router-dom"
+import { Link, useLoaderData, useParams } from "react-router-dom"
+
 
 
 const Details = () => {
@@ -32,6 +33,7 @@ const Details = () => {
         }
       </div>
     </div>
+    <Link className="mx-auto" to={'/'}><button className="btn btn-primary">Go Back</button></Link>
   </div>
     
     </div>
