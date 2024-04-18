@@ -15,12 +15,12 @@ const router = createBrowserRouter([
             {
                path:'/',
                element:<Home></Home>,
-               loader:()=> fetch('../../public/estate.json')
+               loader:()=> fetch('/estate.json')
             },
             {
                 path:'/details/:id',
                 element:<Praivate><Details></Details></Praivate>,
-                loader:()=> fetch('../../public/estate.json')
+                loader:()=> fetch('/estate.json')
             },
             {
                 path:'/profile',
